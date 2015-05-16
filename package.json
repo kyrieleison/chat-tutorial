@@ -5,5 +5,9 @@
   "dependencies": {
     "express": "4.10.2",
     "socket.io": "1.2.0"
+  },
+  "engine": {
+    "node": "v0.12.x",
+    "npm": "2.7.x"
   }
 }
