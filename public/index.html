@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/stylesheets/style.css"></link>
+  </head>
+  <body>
+    <div id="content">
+      <div id="room"></div>
+      <div id="room-list"></div>
+      <div id="messages"></div>
+
+      <form id="send-form">
+        <input id="send-message">
+        <input id="send-button" type="submit" value="Send">
+
+        <div id="help">
+          Chat Command: 
+          <ul>
+            <li>Change name: /rename [username]</li>
+            <li>Join/Create room: /join [room name]</li>
+          </ul>
+        </div>
+      </form>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="/javascripts/chat.js"></script>
+    <script src="/javascripts/chat_ui.js"></script>
+  </body>
+</html>
